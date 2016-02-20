@@ -1,11 +1,12 @@
-* {
+body {
+  background-color: white; }
+
+.content-nav {
+  width: 300px;
+  height: 700px;
   background-color: black; }
 
-body {
-}
-
-h1 {
-  background-color: white; 
-}
+.nav-link {
+  color: white; }
 
 /*# sourceMappingURL=styles.css.map */

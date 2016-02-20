@@ -6,8 +6,28 @@ html(lang="en")
     title NSJJ Club
 
   body
-    h1 North Shore Jiu-Jitsu Club
-    div
-      a(href="#") HOME
-      a(href="#") SCHEDULE
-      a(href="#") CONTACT
+    block content
+    .content-nav
+      header.header-primary
+        //logo link directs back to homepage
+        a.header-primary__logo(href='/')
+          img(src='/assets/nsjj_web_logo.png' width='216' height='144' alt='NSJJ Logo')
+     
+        ul.header-primary__links
+          a.header-primary__link.icon.facebook(href='https://www.facebook.com/nsjjclub', target='_blank') facebook
+          a.header-primary__link.icon.twitter(href='https://twitter.com/nsjjclub', target='_blank') twitter
+        
+        // /header-primary__links
+        nav#nav-primary.header-primary__navigation.nav-primary
+          ul.nav-primary__items
+            li.nav-item
+              a.nav-link(href='/') HOME
+            li.nav-item
+              a.nav-link(href='/schedule') SCHEDULE
+            li.nav-item
+              a.nav-link(href='/contact') CONTACT
+              
+     
+    main.content-primary
+      .content-container
+     
