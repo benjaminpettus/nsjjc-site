@@ -1,5 +1,9 @@
 
-// @import: 'scss/partials/_reset.scss';
+@import 'reset';
+
+*{
+  box-sizing: border-box;
+}
 body {
   background-color: white;
 }
